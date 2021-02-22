@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/tightenco/collect" />
+      <path value="$PROJECT_DIR$/vendor/facebook/php-sdk" />
+      <path value="$PROJECT_DIR$/vendor/tecnickcom/tc-lib-unicode-data" />
+      <path value="$PROJECT_DIR$/vendor/tecnickcom/tc-lib-pdf-encrypt" />
+      <path value="$PROJECT_DIR$/vendor/tecnickcom/tc-lib-pdf" />
+      <path value="$PROJECT_DIR$/vendor/tecnickcom/tc-lib-pdf-graph" />
+      <path value="$PROJECT_DIR$/vendor/tecnickcom/tc-lib-pdf-font" />
+      <path value="$PROJECT_DIR$/vendor/tecnickcom/tc-lib-pdf-image" />
+      <path value="$PROJECT_DIR$/vendor/tecnickcom/tc-lib-file" />
+      <path value="$PROJECT_DIR$/vendor/tecnickcom/tc-lib-barcode" />
+      <path value="$PROJECT_DIR$/vendor/tecnickcom/tc-lib-unicode" />
+      <path value="$PROJECT_DIR$/vendor/tecnickcom/tc-lib-pdf-page" />
+      <path value="$PROJECT_DIR$/vendor/tecnickcom/tc-lib-color" />
+    </include_path>
+  </component>
+</project>

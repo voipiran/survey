@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  <div id="app">
+
+  <button v-on:click="clickHandler">{{message}}</button>
+  </div>
+  <script src="//cdn.bootcss.com/vue/2.2.1/vue.min.js"></script>
+  <script src="../build/vue-sweetalert.js"></script>
+  <script>
+    Vue.use(VueSweetAlert.default)
+    new Vue({
+      el: '#app',
+      methods: {
+        clickHandler() {
+          this.$swal('hello')
+        }
+      },
+      data: {
+        message: 'swal'
+      }
+    })
+  </script>
+</body>
+</html>

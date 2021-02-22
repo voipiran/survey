@@ -1,0 +1,57 @@
+@import "./mixins";
+@import "./variables";
+
+.jp-jplayer {
+  user-select: none;
+  @media (max-width: 630px) {
+  .jp-state-full-screen .jp-poster {
+      height: auto;
+    }
+  }
+}
+
+.jp-hidden {
+  display: none;
+}
+
+.jp-state-no-volume-support {
+  .jp-mute,
+  .jp-volume-bar,
+  .jp-volume-bar-value {
+    display: none;
+  }
+}
+
+.jp-jplayer.jp-state-full-screen {
+  .fitScreen;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  visibility: visible;
+  position: fixed;
+
+  .jp-gui {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    .jp-poster {
+      .fitScreen;
+      max-width: 100%;
+      z-index: -1;
+      margin: 0 auto;
+      position: fixed;
+      display: inline-block;
+    }
+  }
+
+  .jp-state-audio& .jp-media-container, .jp-state-video& .jp-media-container {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+
+    video {
+      width: 100%;  
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+    "/dist/js/app.js": "/dist/js/app.js",
+    "/dist/js/audio.js": "/dist/js/audio.js",
+    "/dist/css/app.css": "/dist/css/app.css",
+    "/dist/css/login.css": "/dist/css/login.css",
+    "/dist/js/chart.js": "/dist/js/chart.js",
+    "/dist/js/confirm.js": "/dist/js/confirm.js",
+    "/dist/js/createUser.js": "/dist/js/createUser.js",
+    "/dist/js/dashboard.js": "/dist/js/dashboard.js",
+    "/dist/js/date_picker.js": "/dist/js/date_picker.js",
+    "/dist/js/installation.js": "/dist/js/installation.js",
+    "/dist/js/login.js": "/dist/js/login.js",
+    "/dist/js/rules.js": "/dist/js/rules.js",
+    "/dist/js/user.js": "/dist/js/user.js"
+}

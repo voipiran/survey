@@ -1,0 +1,32 @@
+@import './variables';
+
+.time() {
+  padding: 0 12px;
+  position: relative;
+  display: inline-block;
+}
+
+.fitScreen() {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.hideElement(@selector, @maxWidth) {
+  @media (max-width: @maxWidth) {
+    @{selector} {
+      display: none;
+    }
+  }
+}
+
+.icon() {
+  min-width: 42px;
+  color:@iconColour;
+  padding: 0;
+}
+
+.iconHover(@iconColour) {
+  color: lighten(@iconColour, 25);
+}

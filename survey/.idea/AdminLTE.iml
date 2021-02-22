@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/facebook/php-sdk" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/tecnickcom/tc-lib-barcode" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/tecnickcom/tc-lib-color" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/tecnickcom/tc-lib-file" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/tecnickcom/tc-lib-pdf" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/tecnickcom/tc-lib-pdf-encrypt" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/tecnickcom/tc-lib-pdf-font" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/tecnickcom/tc-lib-pdf-graph" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/tecnickcom/tc-lib-pdf-image" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/tecnickcom/tc-lib-pdf-page" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/tecnickcom/tc-lib-unicode" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/tecnickcom/tc-lib-unicode-data" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/tightenco/collect" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

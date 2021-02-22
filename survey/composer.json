@@ -1,0 +1,15 @@
+{
+  "require": {
+    "ircmaxell/password-compat" : "1.0.x-dev",
+    "tightenco/collect": "5.2.31"
+  },
+  "autoload": {
+    "classmap": [
+      "app"
+    ],
+    "files": [
+      "app/Functions.php",
+      "app/PasswordHash.php"
+    ]
+  }
+}

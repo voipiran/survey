@@ -1,0 +1,51 @@
+@import "../mixins";
+@import "../variables";
+
+.jp-icon-controls {
+  button:focus {
+    outline: none;
+  }
+
+  button {
+    border: none;
+    background-color: transparent;
+    
+  }
+
+  .jp-download,
+  .jp-play,
+  .jp-repeat,
+  .jp-full-screen,
+  .jp-mute {
+    .icon;
+  }
+
+  a {
+    cursor:pointer;
+    text-decoration:none;
+    color:@iconColour;
+    text-align: center;
+    min-width: 42px;
+  }
+
+  .jp-play {
+    .jp-jplayer & i:before {
+      content:"\f04b";
+    }
+    .jp-jplayer.jp-state-playing & i:before {
+        content:"\f04c";
+    }
+  }
+
+  .jp-mute {
+    .jp-jplayer.jp-state-muted & i:before {
+        content:"\f026";
+    }
+    .jp-jplayer.jp-state-volume-low & i:before {
+        content:"\f027";
+    }
+    .jp-jplayer.jp-state-volume-high & i:before {
+        content:"\f028";
+    }
+  }
+}

@@ -1,0 +1,44 @@
+body{
+    background-image: url('../img/installation.jpg');
+    background-size: cover;
+    font-family: 'irsns';
+    font-weight: 300;
+}
+
+html, body {
+    height: 100%;
+}
+
+@media(min-width:768px){
+    .card-body{
+        min-width: 500px !important;
+    }
+}
+
+.vue-form-wizard .wizard-progress-bar {
+    float: right !important;
+}
+
+.vue-form-wizard .wizard-card-footer .wizard-footer-left {
+    float: right !important;
+}
+
+
+.vue-form-wizard .wizard-card-footer .wizard-footer-right {
+    float: left !important;
+}
+
+
+.pretty .state label:after, .pretty .state label:before, .pretty.p-icon .state .icon {
+    left: auto;
+    right: 0;
+}
+
+[v-cloak]{
+    display: none;
+}
+
+input[readonly] {
+    cursor: text;
+    background-color: #fff;
+}
