@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "Install voipiran Voiz Syrvey"
 echo "VOIPIRAN.io"
-echo "VOIPIRAN Voiz Survey Version 1.4"
+echo "VOIPIRAN Asterisk Survey Version 1.4"
 sleep 1
 
 
