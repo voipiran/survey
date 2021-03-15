@@ -1,5 +1,6 @@
 <?php
-define("BASE_PATH", "VALUE_BASE_PATH");
+$server = $_SERVER['SERVER_ADDR'];
+define("BASE_PATH", "https://$server/survey/");
 // define("BASE_PATH", "http://localhost/phone_php/");
 
 function url(){

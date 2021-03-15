@@ -25,7 +25,8 @@ class DB
     }
 }
 
-const PATH = '_DETAULTPATH_';
+$server = $_SERVER['SERVER_ADDR'];
+define("PATH", "https://$server/survey/");
 
 // all function needs login 
 $login = checkLogin();

@@ -131,7 +131,10 @@ try {
 
     // put config content 
     $config = file_get_contents('config.php');
-    $config = str_replace("VALUE_BASE_PATH", $base_path, $config);
+    /**
+     * this was change because maybe user use dynamic ip
+     * $config = str_replace("VALUE_BASE_PATH", $base_path, $config);
+     */
     file_put_contents('config.php', $config);
 
     // put db content 
@@ -145,7 +148,10 @@ try {
 
     // config functions.php 
     $functions = file_get_contents('../../app/CFunctions.php');
-    $functions = str_replace("_DETAULTPATH_", $base_path, $functions);
+    /**
+     * this was disabled becauase the path is changes to dynamic way
+     * $functions = str_replace("_DETAULTPATH_", $base_path, $functions);
+    */
     $functions = str_replace("_SERVERNAME_", $servername, $functions);
     $functions = str_replace("_USERNAME_", $username, $functions);
     $functions = str_replace("_PASSWORD_", $password, $functions);
@@ -153,8 +159,9 @@ try {
 
     file_put_contents('../../app/Functions.php', $functions);
 
-    // Remove Install.php 
+    // Remove Install.php and CFunctions.php
     unlink('../../install.php');
+    unlink('../../app/CFunctions.php');
 
     // All Done 
     http_response_code(200);
