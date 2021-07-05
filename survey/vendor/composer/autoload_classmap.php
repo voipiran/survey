@@ -8,6 +8,8 @@ $baseDir = dirname($vendorDir);
 return array(
     'App\\Setting' => $baseDir . '/app/Setting.php',
     'App\\User' => $baseDir . '/app/User.php',
-    'DB' => $baseDir . '/app/CFunctions.php',
+    'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
+    'DB' => $baseDir . '/app/Functions.php',
     'PasswordHash' => $baseDir . '/app/PasswordHash.php',
+    'jDateTime' => $baseDir . '/app/jdatetime.class.php',
 );

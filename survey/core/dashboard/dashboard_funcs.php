@@ -407,7 +407,7 @@ function create_pie()
     $sql = "
             SELECT survey_value , COUNT(survey_value) as count_survey
             FROM survey
-            WHERE date_time >= '$from' AND date_time <= '$to'
+            WHERE date_time >= '$from 00:00:00' AND date_time <= '$to 23:59:59'
             AND  survey_location IN (" . getUserQueuesParsed() . ")
             GROUP BY  survey_value
         ";

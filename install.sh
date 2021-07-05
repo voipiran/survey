@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "Install voipiran Voiz Syrvey"
 echo "VOIPIRAN.io"
-echo "VOIPIRAN Asterisk Survey Version 1.4"
+echo "VOIPIRAN Voiz Survey Version 1.4"
 sleep 1
 
 
@@ -31,8 +31,8 @@ echo "DataBase Created Sucsessfully"
 sleep 1
 
 echo "------------Delete OLD Folders-----------------"
-rm -rf /var/www/html/survey			
-										  
+rm -rf /var/www/html/survey
+
 echo "------------Create MiscDest-----------------"
 query="REPLACE INTO miscdests (id,description,destdial) VALUES('100','Survey','4455')"
 mysql -hlocalhost -uroot -p$rootpw asterisk -e "$query"

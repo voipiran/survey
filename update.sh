@@ -1,4 +1,3 @@
-###Update Survey VOIPIRAN
 #!/bin/bash
 echo "Install voipiran Voiz Syrvey"
 echo "VOIPIRAN.io"

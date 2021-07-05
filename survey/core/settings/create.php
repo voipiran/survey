@@ -25,11 +25,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
     ?>
     <style>
-        .disableCause{
+        .disableCause {
             cursor: pointer;
         }
 
-        .swal2-modal .swal2-content{
+        .swal2-modal .swal2-content {
             font-family: 'irsns';
         }
     </style>
@@ -100,7 +100,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     }
                     ?>
                     <form action="store.php" method="post" enctype="multipart/form-data" id="audio">
-                        <input type="hidden" name="_token" value="<?= getToken() ?>" >
+                        <input type="hidden" name="_token" value="<?= getToken() ?>">
                         <div class="box-body">
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -118,7 +118,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="form-group" >
+                                <div class="form-group">
                                     <label>فایل صوتی</label>
                                     <br>
                                     <small>در صورتی که می خواهید فایل صوتی پیش فرض جایگزین شود ، این گزینه را خالی بگذارید.</small>
@@ -148,10 +148,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>ضبط پیام مشتری</label>
-                                    <?php if(isLiteUser()){  ?><small v-on:click="disableCause" class="disableCause" > (دلیل غیرفعال بودن)</small> <?php } ?>
+                                    <?php if (isLiteUser()) {  ?><small v-on:click="disableCause" class="disableCause"> (دلیل غیرفعال بودن)</small> <?php } ?>
                                     <select <?= (isLiteUser()) ? 'disabled' : '' ?> name="customer_voice_status" class="form-control">
-                                        <option value="1">فعال</option>
                                         <option value="0">غیرفعال</option>
+                                        <option value="1">فعال</option>
                                     </select>
                                 </div>
                             </div>
@@ -159,19 +159,19 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 <div class="form-group">
                                     <label>سقف امتیاز برای ضبط پیام</label>
                                     <select <?= (liteUserLimit()) ? 'disabled' : '' ?> name="customer_voice_limit" class="form-control">
-                                        <option value="0" selected>0</option>
+                                        <option value="0" >0</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
                                         <option value="4">4</option>
-                                        <option value="5">5</option>
+                                        <option value="5" selected>5</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>بیان شماره اپراتور</label>
-                                    <?php if(isLiteUser()){  ?> <small v-on:click="disableCause" class="disableCause" > (دلیل غیرفعال بودن)</small> <?php   } ?>
+                                    <?php if (isLiteUser()) {  ?> <small v-on:click="disableCause" class="disableCause"> (دلیل غیرفعال بودن)</small> <?php   } ?>
                                     <select <?= (isLiteUser()) ? 'disabled' : '' ?> name="survey_playagent" id="survey_playagent" class="form-control">
                                         <option value="0">غیرفعال</option>
                                         <option value="1">شماره اپراتور</option>

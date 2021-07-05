@@ -1,4 +1,5 @@
 <?php
+include_once 'app/server.php';
 function url()
 {
     return sprintf(
@@ -18,7 +19,7 @@ $url = str_replace('install.php', '', $url);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>راه اندازی نظر سنجی ویپ ایران</title>
+    <title><?= $server['setupSurvey'] ?></title>
     <link rel="icon" href="dist/img/favicon.ico" type="image/gif" sizes="16x16">
     <link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="dist/css/bootstrap-rtl.min.css">
@@ -35,7 +36,7 @@ $url = str_replace('install.php', '', $url);
     <div class="container h-100 d-flex justify-content-center" id="installation" v-cloak>
         <div class="card my-auto">
             <div class="card-body">
-                <form-wizard ref="wz" @on-complete="onComplete" finish-button-text="ثبت نهایی" next-button-text="مرحله بعد" back-button-text="مرحله قبل" title="راه اندازی نظرسنجی ویپ ایران" subtitle="لطفا تنظیمات پیکربندی سرور خود را وارد نمایید">
+                <form-wizard ref="wz" @on-complete="onComplete" finish-button-text="ثبت نهایی" next-button-text="مرحله بعد" back-button-text="مرحله قبل" title="<?= $server['setupSurvey'] ?>" subtitle="لطفا تنظیمات پیکربندی سرور خود را وارد نمایید">
                     <tab-content title="تنظیمات" icon="ti-settings" :before-change="step1">
                         <div v-on:keyup.enter="nextTab">
                             <div class="row">
@@ -89,20 +90,15 @@ $url = str_replace('install.php', '', $url);
                             <a href="#" @click="showRules"><small>مطالعه شرایط و قوانین</small></a>
                             <!-- Start Rules  -->
                             <modal id="inline-modal" v-cloak>
-                                <template slot="title">شرایط و قوانین استفاده از نرم افزار</template>
+                                <template slot="title"><?= $server['setupRulesTitle'] ?></template>
 
                                 <div slot="body">
-                                    <strong>شرایط و قوانین استفاده از نظرسنجی ویپ ایران</strong> <br>
-                                    این محصول تجاری و متعلق به مجموعه ویپ ایران است، هر گونه استفاده غیر قانونی و بدون تهیه لایسنس پیگرد قانونی دارد.<br>
-                                    1. این محصول از زمان اولین استفاده تا یکسال دارای پشتیبانی برای رفع ایرادات است اما لایسنس خریداری شده بدون محدودیت زمانی است.<br>
-                                    2. لایسنس خریداری شده فقط بر روی یک سیستم تلفنی قابل نصب است.<br>
-                                    3. در طی مدت یکساله پشتیبانی در صورت تغییر سرور و احتیاج به نصب مجدد فقط یکبار می توانید درخواست لایسنس جدید بدهید.<br>
-                                    4. لایسنس خریداری شده مربوط به نسخه جاری در زمان خرید محصول است و نه نسخه های آینده<br>
+                                    <?= $server['setupRulesHtml'] ?>
                                 </div>
 
                                 <div slot="footer">
-                                    <a target="_blank" href="https://voipiran.io">
-                                        <button class="btn btn-md btn-info">VOIPIRAN</button>
+                                    <a target="_blank" href="<?= $server['setupVoipiranButtonLink'] ?>">
+                                        <button class="btn btn-md btn-info"><?= $server['setupVoipiranButtonText'] ?></button>
                                     </a>
                                     <button @click="close" class="btn btn-md btn-danger">بستن</button>
                                 </div>

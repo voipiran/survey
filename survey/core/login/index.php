@@ -2,6 +2,7 @@
 include_once '../config/config.php';
 include_once '../../vendor/autoload.php';
 include_once '../config/db.php';
+include_once '../../app/server.php';
 removeQueueIfRiched($conn);
 checkLicense();
 ?>
@@ -11,7 +12,7 @@ checkLicense();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ورود به نظرسنجی</title>
+    <title><?= $server['loginSurveyTitle'] ?></title>
     <link rel="stylesheet" href="<?= BASE_PATH ?>/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?= BASE_PATH ?>/dist/css/bootstrap-rtl.min.css">
     <link rel="stylesheet" href="<?= BASE_PATH ?>/dist/css/login.css">
@@ -28,11 +29,11 @@ checkLicense();
                 <div class="col-lg-12  mainForm">
                     <div class="card" id="app">
                         <div class="card-title text-center  ">
-                            <img src="<?= BASE_PATH ?>/dist/img/avatar.png" alt="">
+                            <img src="<?= $server['loginLogoPath'] ?>" alt="">
                         </div>
                         <div class="card-body" v-on:keyup.enter="login" >
                             <div class="col-lg-12 text-center form-group">
-                                <strong>ورود به نظرسنجی</strong>
+                                <strong><?= $server['loginSurveyTitle'] ?></strong>
                             </div>
                             <div class="col-lg-12 form-group">
                                 <label>نام کاربری: </label>

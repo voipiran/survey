@@ -4,9 +4,10 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitcdcd2f9f79f75f82ff4816315626f143
+class ComposerStaticInit59816f1818296a726d63e1546319c07e
 {
     public static $files = array (
+        'e40631d46120a9c38ea139981f8dab26' => __DIR__ . '/..' . '/ircmaxell/password-compat/lib/password.php',
         '7ba3c774c30c8399e359b5ff7f3b943e' => __DIR__ . '/..' . '/tightenco/collect/src/Illuminate/Support/helpers.php',
         '45ecae890fa2e92507577da217bd9ba6' => __DIR__ . '/../..' . '/app/Functions.php',
         'e7de19cd0d73a0cc8ec0977937fa1cc2' => __DIR__ . '/../..' . '/app/PasswordHash.php',
@@ -29,16 +30,18 @@ class ComposerStaticInitcdcd2f9f79f75f82ff4816315626f143
     public static $classMap = array (
         'App\\Setting' => __DIR__ . '/../..' . '/app/Setting.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
-        'DB' => __DIR__ . '/../..' . '/app/CFunctions.php',
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'DB' => __DIR__ . '/../..' . '/app/Functions.php',
         'PasswordHash' => __DIR__ . '/../..' . '/app/PasswordHash.php',
+        'jDateTime' => __DIR__ . '/../..' . '/app/jdatetime.class.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitcdcd2f9f79f75f82ff4816315626f143::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitcdcd2f9f79f75f82ff4816315626f143::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitcdcd2f9f79f75f82ff4816315626f143::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit59816f1818296a726d63e1546319c07e::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit59816f1818296a726d63e1546319c07e::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit59816f1818296a726d63e1546319c07e::$classMap;
 
         }, null, ClassLoader::class);
     }

@@ -3,19 +3,6 @@
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 
-if (! function_exists('array_wrap')) {
-    /**
-     * If the given value is not an array, wrap it in one.
-     *
-     * @param  mixed  $value
-     * @return array
-     */
-    function array_wrap($value)
-    {
-        return ! is_array($value) ? [$value] : $value;
-    }
-}
-
 if (! function_exists('collect')) {
     /**
      * Create a collection from the given value.
@@ -82,18 +69,5 @@ if (! function_exists('data_get')) {
         }
 
         return $target;
-    }
-}
-
-if (! function_exists('with')) {
-    /**
-     * Return the given object. Useful for chaining.
-     *
-     * @param  mixed  $object
-     * @return mixed
-     */
-    function with($object)
-    {
-        return $object;
     }
 }

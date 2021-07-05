@@ -1,0 +1,41 @@
+<?php return array(
+    'root' => array(
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
+        'type' => 'library',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'reference' => 'a10d07d19bfe2887d50c5a232bde665dcf287197',
+        'name' => '__root__',
+        'dev' => true,
+    ),
+    'versions' => array(
+        '__root__' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'reference' => 'a10d07d19bfe2887d50c5a232bde665dcf287197',
+            'dev_requirement' => false,
+        ),
+        'ircmaxell/password-compat' => array(
+            'pretty_version' => '1.0.x-dev',
+            'version' => '1.0.9999999.9999999-dev',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../ircmaxell/password-compat',
+            'aliases' => array(),
+            'reference' => '9b99377557a33a4129c9194e60a97a685fab21e0',
+            'dev_requirement' => false,
+        ),
+        'tightenco/collect' => array(
+            'pretty_version' => 'dev-fixphp',
+            'version' => 'dev-fixphp',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../tightenco/collect',
+            'aliases' => array(),
+            'reference' => 'cf7bfd9d7767d45b6cb2dd9dde71a770b78998c7',
+            'dev_requirement' => false,
+        ),
+    ),
+);

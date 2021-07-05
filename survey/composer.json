@@ -1,7 +1,7 @@
 {
   "require": {
     "ircmaxell/password-compat" : "1.0.x-dev",
-    "tightenco/collect": "5.2.31"
+    "tightenco/collect": "dev-fixphp"
   },
   "autoload": {
     "classmap": [
@@ -11,5 +11,11 @@
       "app/Functions.php",
       "app/PasswordHash.php"
     ]
+  },
+  "repositories": {
+    "tightenco/collect" : {
+      "type": "vcs" , 
+      "url": "https://github.com/MmKargar/collect.git"
+    }
   }
 }

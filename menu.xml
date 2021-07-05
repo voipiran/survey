@@ -2,7 +2,7 @@
 
 <module> 
   <menulist> 
-    <menuitem menuid="voipiran" desc="VOIPIRAN SURVEY"
+    <menuitem menuid="voipiran" desc="VOIPIRAN"
 parent="" module="no" link="" order="21"> 
       <permissions> 
         <group id="1" name="administrator" desc="total access"></group> 

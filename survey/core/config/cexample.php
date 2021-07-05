@@ -14,6 +14,6 @@ function url(){
 $current_url = url();
 date_default_timezone_set("Asia/tehran");
 
-$version = '1.4.2';
+$version = '1.5.0';
 
 ?>

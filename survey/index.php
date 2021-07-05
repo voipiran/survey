@@ -5,9 +5,6 @@
     <?php
     (!file_exists('core/config/db.php')) ? header('location:install.php') : '';
 
-    ini_set('display_errors', 1);
-    ini_set('display_startup_errors', 1);
-    error_reporting(E_ALL);
     include 'core/config/config.php';
     include_once 'vendor/autoload.php';
     include 'core/config/db.php';
