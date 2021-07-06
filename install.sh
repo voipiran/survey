@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "Install voipiran Voiz Syrvey"
 echo "VOIPIRAN.io"
-echo "VOIPIRAN Voiz Survey Version 1.4"
+echo "VOIPIRAN Voiz Survey Version 1.5"
 sleep 1
 
 
@@ -111,7 +111,7 @@ echo "Issabel Menu is Created Sucsessfully"
 sleep 1
 
 echo "-------------Installing Composer----------------"
-yum -y -q install php-cli php-zip wget unzip  > /dev/null
+#yum -y -q install php-cli php-zip wget unzip  > /dev/null
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 php composer-setup.php --install-dir=/usr/local/bin --filename=composer  > /dev/null
 
