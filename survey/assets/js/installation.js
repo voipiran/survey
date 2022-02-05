@@ -119,7 +119,7 @@ const installation = new Vue({
                     data: prms,
                 })
                 .then(response =>{
-                    type = response.data.license;
+                    type = response.data.license.license_type;
                 })
                 .catch(error => {
                     ls = false;
