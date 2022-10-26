@@ -15,6 +15,14 @@ yes | cp -rf sourceguardian/php.ini /etc
 echo "SourceGuardian Files have Moved Sucsessfully"
 sleep 1
 
+#echo "-------------Installing Composer----------------"
+#yum -y -q install php-cli php-zip wget unzip  > /dev/null
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php composer-setup.php --install-dir=/usr/local/bin --filename=composer  > /dev/null
+yes | composer install
+echo "Installing Composer Sucsessfully"
+sleep 1
+
 echo "Install viservey Mysql DataBase"
 echo "------------Create DB-----------------"
 #echo -n "Enter the MySQL root password: "
@@ -109,11 +117,6 @@ echo "-------------Issabel Menu----------------"
 issabel-menumerge menu.xml
 echo "Issabel Menu is Created Sucsessfully"
 sleep 1
-
-#echo "-------------Installing Composer----------------"
-#yum -y -q install php-cli php-zip wget unzip  > /dev/null
-php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-php composer-setup.php --install-dir=/usr/local/bin --filename=composer  > /dev/null
 
 echo "-------------Apache Restart----------------"
 service httpd restart
