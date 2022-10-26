@@ -111,9 +111,9 @@ echo "Issabel Menu is Created Sucsessfully"
 sleep 1
 
 #echo "-------------Installing Composer----------------"
-##yum -y -q install php-cli php-zip wget unzip  > /dev/null
-#php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-#php composer-setup.php --install-dir=/usr/local/bin --filename=composer  > /dev/null
+#yum -y -q install php-cli php-zip wget unzip  > /dev/null
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php composer-setup.php --install-dir=/usr/local/bin --filename=composer  > /dev/null
 
 echo "-------------Apache Restart----------------"
 service httpd restart
